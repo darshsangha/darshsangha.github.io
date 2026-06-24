@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darsh Kaur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: 'DM Sans', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      background-image: url('bg.webp');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.0;
+      text-align: center;
+      margin: 0 0 2rem;
+      color: #D4537E;
+      letter-spacing: -0.01em;
+    }
+
+    .rule {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 1.75rem;
+    }
+
+    .rule-line { flex: 1; height: 1px; background: #d4a0b8; }
+
+    .diamond {
+      width: 5px;
+      height: 5px;
+      background: #9b4f72;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid #d4a0b8;
+      background: rgba(255, 255, 255, 0.85);
+      transition: transform 0.15s, border-color 0.15s;
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      border-color: #9b4f72;
+    }
+
+    .link-accent { width: 5px; flex-shrink: 0; align-self: stretch; }
+    .rose   { background: #9b4f72; }
+    .gold   { background: #c8913a; }
+    .black  { background: #222222; }
+
+    .link-body { flex: 1; padding: 14px 16px; }
+
+    .link-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      font-weight: 900;
+      color: #2e1020;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .link-desc {
+      font-size: 11px;
+      color: #b07090;
+      font-weight: 300;
+    }
+
+    .link-arrow {
+      padding: 0 14px;
+      font-size: 16px;
+      color: #d4a0b8;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer {
+      margin-top: 1.75rem;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: #b07090;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    @media (max-width: 480px) {
+      .name { font-size: 44px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="name">Darsh<br>Kaur</h1>
+
+    <div class="rule">
+      <div class="rule-line"></div>
+      <div class="diamond"></div>
+      <div class="rule-line"></div>
+    </div>
+
+    <div class="links">
+      <a class="link" href="https://onelink.shein.com/39/5toqv9ubuz49" target="_blank" rel="noopener">
+        <div class="link-accent black"></div>
+        <div class="link-body">
+          <span class="link-title">My Shein Picks</span>
+          <span class="link-desc">Browse my favourite finds</span>
+        </div>
+        <div class="link-arrow">&#8594;</div>
+      </a>
+
+      <a class="link" href="https://www.etsy.com/shop/DarshSangha" target="_blank" rel="noopener">
+        <div class="link-accent rose"></div>
+        <div class="link-body">
+          <span class="link-title">Shop Punjabi brain puzzles on Etsy</span>
+          <span class="link-desc">Handcrafted puzzles &amp; games</span>
+        </div>
+        <div class="link-arrow">&#8594;</div>
+      </a>
+
+      <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSezDcRINCoIlkVnWVbfxhl0aHL9dpN5zBmWuMeT4XJ_SHEGaw/viewform?usp=header" target="_blank" rel="noopener">
+        <div class="link-accent gold"></div>
+        <div class="link-body">
+          <span class="link-title">Connect with me</span>
+          <span class="link-desc">Free career &amp; post-grad workshops</span>
+        </div>
+        <div class="link-arrow">&#8594;</div>
+      </a>
+    </div>
+
+    <p class="footer">darsh kaur</p>
+  </div>
+</body>
+</html>
